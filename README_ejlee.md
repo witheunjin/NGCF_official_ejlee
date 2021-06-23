@@ -136,6 +136,7 @@ RESOLVED!
 AttributeError: module 'tensorflow' has no attribute 'log'
 ```
 **SOLUTION**
+
 Replace 'tf.log' to 'tf.math.log'
 
 BEFORE
@@ -149,3 +150,7 @@ AFTER
 ```
 RESOLVED!
 ---------
+ERROR
+```
+AttributeError: module 'tensorflow._api.v2.train' has no attribute 'AdamOptimizer'
+```
